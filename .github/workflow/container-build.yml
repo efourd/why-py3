@@ -1,0 +1,24 @@
+name: Build Dockerfiles with detected changes
+
+on:
+  pull_request:
+    branches:
+     - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Has Changed Path
+        uses: MarceloPrado/has-changed-path@v1.0.1
+        id: docker-changes
+        with:
+          paths: debian ubuntu
+
+      - name: Debug
+        uses: hmarr/debug-action@v2
