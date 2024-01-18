@@ -1,8 +1,9 @@
 name: Build Dockerfiles with detected changes
 
 on:
-  pull_request_target:
-    types: [opened, synchronize]
+  pull_request:
+    branches:
+     - master
 
 jobs:
   build:
