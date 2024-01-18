@@ -1,9 +1,15 @@
 name: Build Dockerfiles with detected changes
 
 on:
-  pull_request:
+  push:
     branches:
-     - main 
+      - main
+  pull_request:
+    paths:
+      - 'ubuntu/*/Dockerfile'
+      - 'debian/*/Dockerfile'
+    branches:
+      - main 
 
 jobs:
   build:
@@ -13,12 +19,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-
-      - name: Has Changed Path
-        uses: MarceloPrado/has-changed-path@v1.0.1
-        id: docker-changes
-        with:
-          paths: debian ubuntu
 
       - name: Debug
         uses: hmarr/debug-action@v2
