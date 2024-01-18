@@ -1,5 +1,6 @@
 # why-py3
-[[__toc__]]
+
+Python 3.12 containers for deprecated OS'
 
 ## Why why-py3?
 
