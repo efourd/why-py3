@@ -21,7 +21,7 @@ jobs:
         uses: MarceloPrado/has-changed-path@v1.0.1
         id: docker-changes
         with:
-          paths: debian/* ubuntu/*
+          paths: debian/jessie debian/strech ubuntu/xenial
 
       - name: Debug
         uses: hmarr/debug-action@v2
