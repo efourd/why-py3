@@ -3,7 +3,7 @@ name: Build Dockerfiles with detected changes
 on:
   pull_request:
     branches:
-     - master
+     - main 
 
 jobs:
   build:
