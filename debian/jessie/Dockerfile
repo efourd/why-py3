@@ -30,4 +30,4 @@ WORKDIR /opt/cpython
 RUN ./configure 
 RUN make 
 RUN make install
-RUN echo "2"
+RUN echo "3"
