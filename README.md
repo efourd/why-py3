@@ -1,5 +1,5 @@
 # why-py3
-[[_toc_]]
+[[__toc__]]
 
 ## Why why-py3?
 
