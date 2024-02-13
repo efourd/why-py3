@@ -2,7 +2,7 @@ name: Build Dockerfiles with detected changes
 
 on:
   pull_request:
-    types: [ready_for_review]
+    types: [push,ready_for_review]
     branches:
       - main 
     paths:
