@@ -7,11 +7,11 @@ on:
       - main 
 
 jobs:
-  test xenial build:
+    name: test xenial build
     uses: ./.github/workflows/xenial.yml
   
-  test stretch build:
+    name: test stretch build
     uses: ./.github/workflows/stretch.yml
 
-  test jessie build:
+    name: test jessie build
     uses: ./.github/workflows/jessie.yml
