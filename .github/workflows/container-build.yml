@@ -11,7 +11,7 @@ jobs:
     on:
       paths: 
         - ubuntu/xenial/Dockerfile
-    uses: xenial.yml@main
+    uses: .github/workflows/xenial.yml@main
   
   test stretch build:
     on:
