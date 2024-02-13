@@ -12,7 +12,7 @@ on:
   workflow_call:
 
 jobs:
-  Build Jessie python 3.12.2:
+  build-jessie-python-3_12_2:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code

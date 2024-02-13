@@ -7,19 +7,19 @@ on:
       - main 
 
 jobs:
-  Test xenial build:
+  test-xenial-build:
     runs-on: ubuntu-latest
     steps:
       - name: build xenial
         uses: ./.github/workflows/xenial.yml
   
-  Test stretch build:
+  test-stretch-build:
     runs-on: ubuntu-latest
     steps:
       - name: stretch build
         uses: ./.github/workflows/stretch.yml
 
-  Test jessie build:
+  test-jessie-build:
     runs-on: ubuntu-latest
     steps:
       - name: jessie build
