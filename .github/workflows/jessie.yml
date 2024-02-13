@@ -1,3 +1,5 @@
+name: Build Jessie
+
 env:
   DISTRO: debian/jessie
 

@@ -1,3 +1,5 @@
+name: Build xenial
+
 env:
   DISTRO: ubuntu/xenial
 

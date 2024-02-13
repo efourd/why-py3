@@ -1,3 +1,5 @@
+name: Build stretch
+
 env:
   DISTRO: debian/stretch
 
