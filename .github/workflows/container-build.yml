@@ -8,13 +8,13 @@ on:
 
 jobs:
   Test xenial build:
-    name: build xenial
-    uses: ./.github/workflows/xenial.yml
+    - name: build xenial
+      uses: ./.github/workflows/xenial.yml
   
   Test stretch build:  
-    name: stretch build
-    uses: ./.github/workflows/stretch.yml
+    - name: stretch build
+      uses: ./.github/workflows/stretch.yml
 
   Test jessie build:
-    name: jessie build
-    uses: ./.github/workflows/jessie.yml
+    - name: jessie build
+      uses: ./.github/workflows/jessie.yml
