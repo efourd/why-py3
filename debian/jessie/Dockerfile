@@ -1,4 +1,6 @@
 FROM debian:jessie
+LABEL author="Eric Ford"
+LABEL description="Debian Jessie with Python 3.12.2 installed from source"
 
 RUN echo \
 'deb http://archive.debian.org/debian jessie main contrib non-free \n\

@@ -1,4 +1,6 @@
 FROM debian:stretch
+LABEL author="Eric Ford"
+LABEL description="Debian Stretch with Python 3.12.2 installed from source"
 
 RUN echo \
 'deb http://archive.debian.org/debian stretch contrib main non-free \n\

@@ -1,4 +1,7 @@
 FROM ubuntu:xenial
+LABEL author="Eric Ford"
+LABEL description="Ubuntu Xenial with Python 3.12.2 installed from source"
+
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt -y install git gnupg2 ca-certificates apt-utils apt-transport-https build-essential zlib1g-dev \
     libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev libgdm-dev chromium-chromedriver
