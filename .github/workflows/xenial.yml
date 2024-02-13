@@ -10,6 +10,7 @@ on:
     paths:
       - ubuntu/xenial/Dockerfile
   workflow_call:
+  workflow_dispatch:
 
 jobs:
   build-xenial-python-3_12_2:

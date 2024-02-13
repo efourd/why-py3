@@ -10,6 +10,7 @@ on:
     paths:
       - debian/jessie/Dockerfile
   workflow_call:
+  workflow_dispatch:
 
 jobs:
   build-jessie-python-3_12_2:
