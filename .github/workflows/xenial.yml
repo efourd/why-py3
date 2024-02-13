@@ -8,7 +8,7 @@ on:
     branches:
       - main
     paths:
-      - $DISTRO/Dockerfile
+      - ${{ env.DISTRO }}/Dockerfile
   workflow_call:
 
 jobs:
