@@ -1,4 +1,4 @@
-name: Build Jessie
+name: Jessie 3.12.2
 
 env:
   DISTRO: debian/jessie

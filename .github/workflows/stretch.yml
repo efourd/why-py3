@@ -1,4 +1,4 @@
-name: Build stretch
+name: Stretch 3.12.2
 
 env:
   DISTRO: debian/stretch

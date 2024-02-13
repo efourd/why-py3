@@ -1,4 +1,4 @@
-name: Build xenial
+name: Xenial 3.12.2
 
 env:
   DISTRO: ubuntu/xenial
