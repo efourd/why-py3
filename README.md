@@ -1,6 +1,6 @@
-[![Stretch 3.12.2](https://github.com/efourd/why-py3/actions/workflows/stretch.yml/badge.svg)](https://github.com/efourd/why-py3/actions/workflows/stretch.yml)
-[![Jessie 3.12.2](https://github.com/efourd/why-py3/actions/workflows/jessie.yml/badge.svg)](https://github.com/efourd/why-py3/actions/workflows/jessie.yml)
-[![Xenial 3.12.2](https://github.com/efourd/why-py3/actions/workflows/xenial.yml/badge.svg)](https://github.com/efourd/why-py3/actions/workflows/xenial.yml)
+[!(https://img.shields.io/github/actions/workflow/status/efourd/why-py3/xenial.yml?style=flat-square&logo=ubuntu&label=xenial%203.12.2)]
+[!(https://img.shields.io/github/actions/workflow/status/efourd/why-py3/jessie.yml?style=flat-square&logo=debian&label=jessie%203.12.2)]
+[!(https://img.shields.io/github/actions/workflow/status/efourd/why-py3/stretch.yml?style=flat-square&logo=debian&label=stretch%203.12.2)]
 # why-py3
 
 Python 3.12 containers for deprecated OS
