@@ -5,6 +5,13 @@ on:
     types: [ready_for_review]
     branches:
       - main 
+  pull_request:
+    types: [push]
+    branches:
+      - main
+    paths:
+      - debian/*/Dockerfile
+      - ubuntu/*/Dockerfile
 
 jobs:
   test-xenial-build:
