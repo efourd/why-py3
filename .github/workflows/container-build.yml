@@ -11,18 +11,18 @@ jobs:
     on:
       paths: 
         - ubuntu/xenial/Dockerfile
-    uses: xenial.yml
+    uses: xenial.yml@main
   
   test stretch build:
     on:
       paths: 
         - debian/stretch/Dockerfile
-    uses: stretch.yml
+    uses: stretch.yml@main
 
   test jessie build:
     on:
       paths: 
         - debian/jessie/Dockerfile
-    uses: jessie.yml
+    uses: jessie.yml@main
 
 
