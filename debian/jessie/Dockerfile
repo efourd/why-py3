@@ -34,4 +34,3 @@ WORKDIR /opt/cpython
 RUN ./configure
 RUN make 
 RUN make install
-RUN echo 1
