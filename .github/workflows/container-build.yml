@@ -13,17 +13,32 @@ jobs:
   test-xenial-build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
       - name: build xenial
         uses: ./.github/workflows/xenial.yml
   
   test-stretch-build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
       - name: stretch build
         uses: ./.github/workflows/stretch.yml
 
   test-jessie-build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
       - name: jessie build
         uses: ./.github/workflows/jessie.yml
