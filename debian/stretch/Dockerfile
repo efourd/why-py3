@@ -1,5 +1,6 @@
 FROM debian:stretch
 LABEL author="Eric Ford"
+LABEL email="jamesericford@gmail.com"
 LABEL project="https://github.com/efourd/why-py3/"
 LABEL description="Debian Stretch with Python 3.12.2 installed from source"
 

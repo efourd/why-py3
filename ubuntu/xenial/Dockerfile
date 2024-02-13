@@ -1,5 +1,6 @@
 FROM ubuntu:xenial
 LABEL author="Eric Ford"
+LABEL email="jamesericford@gmail.com"
 LABEL project="https://github.com/efourd/why-py3/"
 LABEL description="Ubuntu Xenial with Python 3.12.2 installed from source"
 
