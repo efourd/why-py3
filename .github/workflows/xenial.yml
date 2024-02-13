@@ -8,7 +8,7 @@ on:
     branches:
       - main
     paths:
-      - ${{ env.DISTRO }}/Dockerfile
+      - ubuntu/xenial/Dockerfile
   workflow_call:
 
 jobs:

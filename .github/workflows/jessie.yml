@@ -8,7 +8,7 @@ on:
     branches:
       - main
     paths:
-      - ${{ env.DISTRO }}/Dockerfile
+      - debian/jessie/Dockerfile
   workflow_call:
 
 jobs:
