@@ -10,6 +10,8 @@ on:
     paths:
       - $DISTRO/Dockerfile
   workflow_call:
+    inputs:
+      DISTRO:
 
 jobs:
   build-jessie-python-3_12_2:
@@ -27,4 +29,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: false
-          file: $DISTRO/Dockerfile 
+          file: ${{ env.DISTRO }}/Dockerfile 
