@@ -15,7 +15,7 @@ RUN apt-get install -y build-essential gdb lcov pkg-config libbz2-dev libffi-dev
     libasound2 libnspr4 libnss3 wget xdg-utils apt-transport-https gnupg2 software-properties-common
 
 # OpenSSL 1.1.1
-# this is a dependency of python 3.12.0 
+# this is a dependency of python 3.12 
 WORKDIR /opt
 ADD https://www.openssl.org/source/openssl-1.1.1w.tar.gz /opt
 RUN mkdir /opt/openssl && tar -xf openssl-1.1.1w.tar.gz -C /opt/openssl --strip-components=1
@@ -25,7 +25,7 @@ RUN ldconfig
 
 # Python 3.12.0
 WORKDIR /opt/
-RUN git clone --depth 1 --branch v3.12.0 https://github.com/python/cpython.git
+RUN git clone --depth 1 --branch v3.12.2 https://github.com/python/cpython.git
 WORKDIR /opt/cpython
 RUN ./configure --enable-optimizations
 RUN make
