@@ -1,31 +1,28 @@
 name: Build Dockerfiles with detected changes
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     types: [ready_for_review]
     branches:
       - main 
 
 jobs:
-  build:
-    strategy:
-      matrix:
-        distro: ["debian/jessie","debian/stretch","ubuntu/xenial"]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
+  test xenial build:
+    on:
+      paths: 
+        - ubuntu/xenial/Dockerfile
+    uses: xenial.yml
+  
+  test stretch build:
+    on:
+      paths: 
+        - debian/stretch/Dockerfile
+    uses: stretch.yml
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+  test jessie build:
+    on:
+      paths: 
+        - debian/jessie/Dockerfile
+    uses: jessie.yml
 
-      - name: Build container
-        uses: docker/build-push-action@v5
-        with:
-          push: false
-          file: ${{ matrix.distro }}/Dockerfile
+

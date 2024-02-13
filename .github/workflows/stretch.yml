@@ -1,0 +1,28 @@
+env:
+  DISTRO: debian/stretch
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - $DISTRO/Dockerfile
+  workflow_call:
+
+jobs:
+  Build Stretch python 3.12.2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build container
+        uses: docker/build-push-action@v5
+        with:
+          push: false
+          file: $DISTRO/Dockerfile 
