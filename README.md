@@ -1,6 +1,9 @@
+[![Stretch 3.12.2](https://github.com/efourd/why-py3/actions/workflows/stretch.yml/badge.svg)](https://github.com/efourd/why-py3/actions/workflows/stretch.yml)
+[![Jessie 3.12.2](https://github.com/efourd/why-py3/actions/workflows/jessie.yml/badge.svg)](https://github.com/efourd/why-py3/actions/workflows/jessie.yml)
+[![Xenial 3.12.2](https://github.com/efourd/why-py3/actions/workflows/xenial.yml/badge.svg)](https://github.com/efourd/why-py3/actions/workflows/xenial.yml)
 # why-py3
 
-Python 3.12 containers for deprecated OS'
+Python 3.12 containers for deprecated OS
 
 ## Why why-py3?
 
